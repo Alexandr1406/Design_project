@@ -1,0 +1,28 @@
+.menu {
+
+
+  &__list {
+      display: flex;   
+      font-size: 16px;
+      font-weight: 600;
+      
+  }
+
+  &__item {
+      margin-right: 50px;
+  }
+
+  &__link {
+      transition: all .3s;
+      
+      &:hover{
+          color: $color;
+      }
+  }
+
+  &__lang {
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+}

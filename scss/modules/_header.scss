@@ -1,0 +1,42 @@
+.header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    
+
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;   
+        margin-bottom: 140px;   
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        color: $color;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 85px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        padding-right: 550px;
+        margin-bottom: 100px;
+    }
+
+    &__btn--look {
+        margin-bottom: 240px;
+        margin-left: 30px;
+    }
+}

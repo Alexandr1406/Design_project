@@ -1,0 +1,99 @@
+.program {
+    min-height: 100vh;
+    padding-top: 130px;
+    padding-bottom: 1px;
+
+    &__block {
+        display: flex;
+        height: 550px;
+        margin-bottom: 60px;
+        background:#1A1A1A;
+        padding-bottom: 1px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 90px;
+    }
+
+    &__image {
+        min-width: 50%;
+        height: auto;
+
+        &--2 {
+            @include size(100%);
+                }
+    }
+
+    &__box {
+        padding: 25px 35px 35px 65px;
+    }
+
+    &__box-2 {
+        padding: 25px 20px 35px 35px;
+        max-width: 50%;
+    }
+
+
+    &__text {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;        
+
+        &--time {
+            display: flex;
+            border: 1px solid $color;
+            padding: 5px 8px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        margin-bottom: 65px;       
+
+        &::before {
+           top: 50px;           
+        }
+    }
+
+    &__info {
+        margin-bottom: 50px;
+
+        &--text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            padding-right: 20px;
+        }
+    }
+
+    &__btn {
+        padding: 12px 30px;
+        border: 1px solid $color;
+        background: none;
+        color: #fff;
+        font: 700 14px $font-btn;
+        margin-right: 30px;
+        margin-bottom: 35px;
+        cursor: pointer;
+
+    }
+
+    &__order {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    } 
+
+    &__price {
+        font: 700 24px $font-btn;
+        text-align: right;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto 120px;
+    }
+}

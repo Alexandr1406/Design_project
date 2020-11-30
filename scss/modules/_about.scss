@@ -1,0 +1,51 @@
+.about {
+    background: #1a1a1a;
+    min-height: 100%;
+    padding: 110px 0 120px;
+    
+
+    &__wrapper {
+        display: flex;
+        margin-bottom: 120px;
+    }
+
+    &__info {
+        max-width: 40%;
+        margin-right: 100px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 600;
+        color: $color;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        position: relative;
+        margin-bottom: 45px;
+
+        &--item {
+          display: flex;
+          align-items: center;
+        }
+    }
+
+    &__img {
+        @include size (30px);
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+    }
+}

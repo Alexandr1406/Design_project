@@ -1,0 +1,39 @@
+.gallery {
+    min-height: 100vh;
+
+    &__title {
+        margin-bottom: 110px;
+        text-transform: uppercase;
+    }
+
+    &__wrapper {
+        margin-bottom: 65px;
+        display: flex;
+    }
+
+    &__long {
+        width: 550px;
+        margin-right: 40px;
+    }
+
+    &__img {
+        width: 635px;
+        
+        &--1 {
+            margin-bottom: 45px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 140px;
+    }
+
+    &__btn {
+        @include size(200px, 50px);
+        font-size: 14px;
+        background: $color;
+    }
+}

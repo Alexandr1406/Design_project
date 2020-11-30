@@ -1,0 +1,43 @@
+.swipe{
+    display: flex;
+    justify-content: center;
+&__item {
+    @include size(20px);
+    border-radius: 50%;
+    border: 1px solid $color;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &--arrow {
+        @include size(55px, 25px);
+        border-radius: 32px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: $color;
+    }
+
+    
+    &:first-child {
+        margin-right: 20px;
+    }
+    &:last-child {
+        margin-left: 20px;
+        transform: rotate(180deg);
+        
+    }
+
+    &:hover{
+        background: $color;
+    }
+
+    &--active{
+        background: $color;
+    }
+}
+
+&__arrow {
+    padding: 5px;
+}
+
+}

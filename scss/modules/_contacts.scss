@@ -1,0 +1,46 @@
+.contacts {
+    &__wrap {
+        display: flex;
+        padding: 185px 0;
+    }
+
+    &__map {
+        width: 840px;
+        margin-right: 75px;
+    }
+
+    &__info {
+        padding-top: 90px;
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 600;
+
+        &--title {
+            font-size: 36px;            
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        &--adress {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        &--work {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        &--time {
+            margin-bottom: 20px;
+        }
+        &--phone {
+            margin-bottom: 10px;
+        }
+        &--num {
+            margin-bottom: 5px;
+        }
+        &--mail {
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}

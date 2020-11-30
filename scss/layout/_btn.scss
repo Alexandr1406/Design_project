@@ -1,0 +1,16 @@
+.button {
+    font-family: $font-btn;
+    width: 285px;
+    height: 65px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid $color;
+    background: none;
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        background: $color;
+    }
+}

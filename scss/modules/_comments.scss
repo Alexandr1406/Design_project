@@ -1,0 +1,59 @@
+.comments {
+    position: relative;
+    padding-bottom: 1px;
+
+    &__wrap {
+        background: #1C1C1C;        
+        padding: 60px 320px;
+        margin-bottom: 80px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__text {
+        width: 50%;
+        &--name {
+            padding-top: 50px;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        &--info  {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        &--item {
+            margin: 0 5px 30px;
+        }
+    }
+
+    &__btn {
+        @include size(135px, 35px);
+        font: 400 14px $font;
+    }
+
+    &__quote {
+        @include pos($l:105px, $b:250px);
+        transform: rotate(180deg);
+    }
+
+    &__quote-1 {
+        @include pos($r:100px, $t:50px);
+    }
+
+    &__swipe {
+        margin-bottom: 210px;
+    }
+}

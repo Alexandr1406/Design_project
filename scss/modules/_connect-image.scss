@@ -1,0 +1,30 @@
+.connect-image {
+    background-image: url(../images/contacts.jpg);
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    
+    &__wrap {
+        padding-top: 120px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background: rgba(32, 33, 35, .3);
+        height: 100%;
+        
+    }
+    &__title {        
+        font-size: 52px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    &__num {
+        font-size: 36px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+}

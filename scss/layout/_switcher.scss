@@ -1,0 +1,36 @@
+.lang {
+    display: flex;
+
+    &__shortcut {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &__field {
+        display: none;
+
+        &:checked + .lang__label::before {
+            left: 19px;
+        }
+    }
+
+    &__label {
+        @include size (34px, 16px);
+
+        border: 1px solid #fff;
+        border-radius: 20px;
+        display: block;
+        position: relative;
+        margin: 0 5px;
+
+        &::before {
+            @include size(11px);
+            @include pos($t:1px, $l: 2px);
+            background: #fff;
+            border-radius: 50%;
+            content: '';
+            transition: all .3s;
+        }
+
+    }
+}
