@@ -13,6 +13,21 @@
         margin-right: 70px;
     }
 
+    &__first {
+        min-width: 40%;
+        margin-right: 40px;
+
+        &--info {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 55px;
+        }
+        
+        &--img {
+            height: 100%;
+        }
+    }
+
     &__second {
         background: #1C1C1C;
 
@@ -23,15 +38,6 @@
         }
         &--info {
             padding: 0 70px 0 30px;
-        }
-    }
-
-    &__first {
-        min-width: 40%;
-        margin-right: 40px;
-        
-        &--img {
-            height: 100%;
         }
     }
 
@@ -70,13 +76,13 @@
         font-weight: 300;
         line-height: 25px;
         padding-right: 35px;
-        margin-bottom: 140px;
+        flex-grow: 1;
 
         &--second {
             font-size: 13px;
             font-weight: 300;
             line-height: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
     }
 

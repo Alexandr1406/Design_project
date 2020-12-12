@@ -1,6 +1,7 @@
 .swipe{
     display: flex;
     justify-content: center;
+    
 &__item {
     @include size(20px);
     border-radius: 50%;

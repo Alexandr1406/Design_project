@@ -35,5 +35,10 @@
         @include size(200px, 50px);
         font-size: 14px;
         background: $color;
+
+        &:hover {
+            background-color: #202123;
+            border: 2px solid $color;
+        }
     }
 }

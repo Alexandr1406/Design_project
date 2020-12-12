@@ -1,6 +1,5 @@
 .menu {
 
-
   &__list {
       display: flex;   
       font-size: 16px;
@@ -13,12 +12,26 @@
   }
 
   &__link {
-      transition: all .3s;
-      
-      &:hover{
-          color: $color;
+        position: relative;
+      &::after {
+        content: '';
+        @include pos($l:50%, $b:-4px);
+        @include size(0, 3px);
+        background-color: $color;
+        transition: all .3s;
       }
-  }
+
+      &:hover::after {
+        width: 100%;
+        left: 0;        
+    }
+
+
+        // background: $color;
+        // width: 0;
+        // height: 3px;
+        // transition: all .3s;
+    }
 
   &__lang {
     margin-left: 25px;

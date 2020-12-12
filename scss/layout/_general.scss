@@ -38,11 +38,7 @@ a {
 	color: #fff;
 }
 
-.menu {
-	&__toggle {
-		display: none;
-	}
-}
+
 
 .arrow-down {
 	margin-left: 5px;
@@ -51,7 +47,17 @@ a {
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
 	color: #cdcdcd;
+	font: 100 18px $font;
+	
 }
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder { 
+	color:transparent;
+}
+
+
+
 .checkbox {
 	margin-right: 15px;
 	@include size(18px);
